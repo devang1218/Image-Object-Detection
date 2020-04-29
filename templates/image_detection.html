@@ -1,0 +1,8 @@
+<h1>Object Detection!</h1>
+<a href="{{ url_for('index') }}">Back</a>
+<p></p>
+<ul>
+  {%for base in images%}
+  <li><img src="data:image/jpeg;base64,{{ base }}" /></li>
+  {% endfor %}
+</ul>
